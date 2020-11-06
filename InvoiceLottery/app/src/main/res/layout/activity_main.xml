@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3110100C"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="175dp"
+        android:text="2018InvoiceLottery"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="175dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/Invoice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button_Start_Lottery"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="175dp"
+        android:onClick="click_AtoB"
+        android:text="StartLottery"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Jun_Feb_Invoice"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="120dp"
+        android:text="2018/Jun.Feb.Invoice"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/March_April_Invoice"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="5dp"
+        android:text="2018/March.April.Invoice"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Jun_Feb_Invoice" />
+
+    <Button
+        android:id="@+id/May_June_Invoice"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="5dp"
+        android:text="2018/May.June.Invoice"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/March_April_Invoice" />
+
+    <Button
+        android:id="@+id/July_August_Invoice"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="5dp"
+        android:text="2018/July.August.Invoice"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/May_June_Invoice" />
+
+    <Button
+        android:id="@+id/Set_Oct_Invoice"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="5dp"
+        android:text="2018/Set.Oct.Invoice"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/July_August_Invoice" />
+
+    <Button
+        android:id="@+id/Nov_Dec_Invoice"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="5dp"
+        android:text="2018/Nov.Dec.Invoice"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Set_Oct_Invoice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
